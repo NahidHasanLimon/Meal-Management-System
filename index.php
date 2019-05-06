@@ -164,7 +164,7 @@ $rent_cost=$usr->find_rent_and_extra_costs($startDate);
     <div class="row align-items-center justify-content-center">
       <div class="col-14 mb-2">
          <marquee><p style="font-family: Impact; font-size: 18pt">Welcome! Dear <3 </p></marquee>
-
+<div class="jumbotron">
        <p> <h6 class="text-center"><b>Month Meal Details</b></h6>
               <form class="form-inline" action="index.php" method="post" autocomplete="off">
 
@@ -175,6 +175,7 @@ $rent_cost=$usr->find_rent_and_extra_costs($startDate);
 
                 </form>
               </p>
+            </div>
 
       </div>
     </div>
@@ -198,7 +199,7 @@ $rent_cost=$usr->find_rent_and_extra_costs($startDate);
                
                     <div class="card-body">
                       <div class="table-responsive-xl">
-                      <table class="table table-sm table table-bordered table table-hover table-dark" style="max-width:30%;max-height: 5%;">
+                      <table class="table table-sm table table-bordered table table-hover table-dark" style="max-width: 30%; max-height:5%;">
                         <tr>
                           <td colspan="3" class="text-center"> Summary</td>
                           <td colspan="1" class="text-center"> Actions</td>

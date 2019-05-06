@@ -973,7 +973,7 @@ public function find_user_all_meal($user_id,$startDate)
         SET
         title='$title',
         description='$description',
-        date='now()'
+        date=now()
         WHERE id = '$notice_id' ";
           $result=$this->db->update($query);
           if ($result) {
@@ -1014,7 +1014,8 @@ public function find_user_all_meal($user_id,$startDate)
     public function find_all_user_active_notices($startDate)
    {
    
-    $query= "SELECT * FROM notice WHERE status=1 AND date >= '$startDate' + INTERVAL 0 MONTH AND date < '$startDate' + INTERVAL 1 MONTH  ORDER BY id ASC";
+    $query= "SELECT * FROM notice WHERE status=1 AND 
+    date >= '$startDate' + INTERVAL 0 MONTH AND date < '$startDate' + INTERVAL 1 MONTH  ORDER BY id ASC";
 
      $result=$this->db->class_select_option($query);
      return $result;
